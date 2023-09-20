@@ -1,19 +1,37 @@
 package org.example;
-
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+import java.util.ArrayList;
 public class Main {
+
+
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        int largo = largoLista();
+        ArrayList<Integer> lista = ingresarDatosLista(largo);
         }
+    public static int largoLista(){
+        Scanner Scan = new Scanner(System.in);
+        int largo, ingresos;
+        System.out.println("ingrese el largo de su lista, este debe estar entre el 2 y el 20");
+        largo = Scan.nextInt();
+        return largo;
     }
-}
+    public static ArrayList<Integer> ingresarDatosLista(int largo) {
+        ArrayList<Integer> listaNumeros = new ArrayList<Integer>();
+        for (int i = 0; i < largo; i++) {
+            Scanner agregar = new Scanner(System.in);
+            int NumeroAgregar = agregar.nextInt();
+            listaNumeros.add(NumeroAgregar);
+            System.out.print(listaNumeros);
+
+        }
+        return listaNumeros;
+    }
+        public static ArrayList<Integer> Multiplicar (ArrayList<Integer> listaNumeros){
+        System.out.print(listaNumeros);
+        return listaNumeros;
+
+    }
+
+
+    }
+
