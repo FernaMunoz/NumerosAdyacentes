@@ -19,6 +19,8 @@ metodo buscar mayor
 retornar por pantalla el producto mayor encotrado
 
 Actividad 1: Implemente su método
+tiempo esperado: 30min
+tiempo real: 55 min
 Integrar codigo
 
 Actividad 2: Probando su código
