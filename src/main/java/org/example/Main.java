@@ -1,19 +1,41 @@
 package org.example;
+import java.lang.Math;
+import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+    int largo =largolista();
+    int[] arreglo = crearlista(largo);
+    int mayorProducto = productoAdyacentes(arreglo);
+    System.out.println("el mayor producto:" + mayorProducto);
     }
+
+    public static int largolista() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("ingrese la cantidad de numeros de su lista");
+        int largo = scanner.nextInt();
+        return largo;
+    }
+
+    public static int[] crearlista(int largo) {
+        Scanner scanner = new Scanner(System.in);
+        int[] arreglo = new int[largo];
+
+        for (int i = 0; i < largo; i++) {
+            arreglo[i] = scanner.nextInt();
+        }
+        return arreglo;
+    }
+
+    public static int productoAdyacentes(int[] arreglo) {
+        int mayorProducto = Integer.MIN_VALUE;
+        for (int i=0; i<arreglo.length -1; i++ ){
+            int productoActual = arreglo[i] * arreglo [i+1];
+            if (productoActual > mayorProducto){
+               mayorProducto = productoActual;
+            }
+        }
+         return mayorProducto;  
+    }
+
 }
