@@ -18,6 +18,9 @@ las multiplicaciones se guardaran en una lista
 metodo buscar mayor
 retornar por pantalla el producto mayor encotrado
 
+actividad 1 - implemente su método
+tiempo establecido: 30min
+
 
 
 
