@@ -24,8 +24,10 @@ tiempo real: 55 min
 Integrar codigo
 
 Actividad 2: Probando su código
+Tiempo estimado: 
+Tiempo real:
 
-Caso 1:
+Caso 1: 
 Caso 2:
 Caso 3:
 Caso 4: 
