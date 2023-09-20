@@ -27,6 +27,8 @@ Actividad 2: Probando su código
 Tiempo estimado: 
 Tiempo real:
 
+//Casos no planteados por lo que no cuenta en el tiempo
+
 Caso 1: 
 Caso 2:
 Caso 3:
