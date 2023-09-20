@@ -18,7 +18,15 @@ las multiplicaciones se guardaran en una lista
 metodo buscar mayor
 retornar por pantalla el producto mayor encotrado
 
+Actividad 1: Implemente su método
+Integrar codigo
 
+Actividad 2: Probando su código
+
+Caso 1:
+Caso 2:
+Caso 3:
+Caso 4: 
 
 
 
