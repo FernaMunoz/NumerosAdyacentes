@@ -8,3 +8,11 @@ parametros de entrada: una lista de numeros enteros, la lista con un largo min d
 
 valor de retorno: el producto mayor encontrado entre las multiplicaciones de los numeros de la lista
 
+importar el scanner y el math
+crear la clase Main
+pedir al usuario el largo de la lista (entre 2 y 20)
+pedir al usuario los numeros enteros a ingresar a su lista
+creacion de metodo fuera del Main
+método multiplicar elementos lista comenzando de la posicion 0 de la lista
+
+
