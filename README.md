@@ -24,15 +24,16 @@ tiempo real: 55 min
 Integrar codigo
 
 Actividad 2: Probando su código
-Tiempo estimado: 
-Tiempo real:
+Tiempo estimado: 60 min
+Tiempo real: 
 
 //Casos no planteados por lo que no cuenta en el tiempo
 
-Caso 1: 
-Caso 2:
-Caso 3:
-Caso 4: 
+Caso 1: numeros enteros pequeños y positivos
+Caso 2: numeros enteros negativos
+Caso 3: numeros grandes y positivos
+Caso 4: un solo numero
+caso 5: numeros positivos y negativos
 
 
 
