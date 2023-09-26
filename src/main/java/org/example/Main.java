@@ -1,5 +1,4 @@
 package org.example;
-import java.lang.Math;
 import java.util.Scanner;
 
 public class Main {
@@ -7,12 +6,12 @@ public class Main {
         int largo =largolista();
         int[] arreglo = crearlista(largo);
         int mayorProducto = productoAdyacentes(arreglo);
-        System.out.println("el mayor producto:" + mayorProducto);
+        System.out.println("El mayor producto:" + mayorProducto);
     }
 
     public static int largolista() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("ingrese la cantidad de numeros de su lista");
+        System.out.println("Ingrese la cantidad de numeros de su lista");
         int largo = scanner.nextInt();
         return largo;
     }
