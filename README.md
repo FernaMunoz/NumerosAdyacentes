@@ -25,15 +25,14 @@ Integrar codigo
 
 Actividad 2: Probando su código
 Tiempo estimado: 60 min
-Tiempo real: 
+Tiempo real: 28 min
 
 //Casos no planteados por lo que no cuenta en el tiempo
 
-Caso 1: numeros enteros pequeños y positivos
-Caso 2: numeros enteros negativos
-Caso 3: numeros grandes y positivos
-Caso 4: un solo numero
-caso 5: numeros positivos y negativos
+Caso 1: numeros enteros pequeños y positivos {1,4,2,2,5,1} deberia retornar 10
+Caso 2: numeros enteros negativos {-4,-5,-3,-10,-20} deberia retornar 200
+Caso 3: numeros grandes y positivos {100, 200, 1000, 1000, 150,600} deberia retornar 1000000
+caso 4: numeros positivos y negativos {-1, 50, -35, 100, -4, 60, -70} deberia retornar -50
 
 
 
