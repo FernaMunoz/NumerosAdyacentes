@@ -30,9 +30,26 @@ Tiempo real: 28 min
 //Casos no planteados por lo que no cuenta en el tiempo
 
 Caso 1: numeros enteros pequeños y positivos {1,4,2,2,5,1} deberia retornar 10
+
 Caso 2: numeros enteros negativos {-4,-5,-3,-10,-20} deberia retornar 200
+
 Caso 3: numeros grandes y positivos {100, 200, 1000, 1000, 150,600} deberia retornar 1000000
+
 caso 4: numeros positivos y negativos {-1, 50, -35, 100, -4, 60, -70} deberia retornar -50
+
+actividad 3:
+tiempo estimado 20min 
+tiempo real: 25min
+
+Excepción IllegalArgumentException en el método productoAdyacentes:
+-Cuando el arreglo pasado como argumento es nulo o tiene menos de 2 elementos, se lanza una excepción con el 
+mensaje: "El arreglo debe tener al menos dos elementos y no puede ser cero."
+-Cuando el tamaño del arreglo supera los 20 elementos, se lanza una excepción con el mensaje: "El largo de la
+lista no puede exceder las 20 variables, ingrese nuevamente un número."
+-En el código, también se imprime un mensaje de error en caso de que la longitud del arreglo sea negativa: 
+"Error: La longitud de la lista no puede ser un número negativo."
+Excepción InputMismatchException en el método crearlista:
+-Si el usuario ingresa un valor que no es un entero válido cuando se está llenando el arreglo, se lanzará una excepción de tipo InputMismatchException.
 
 
 
