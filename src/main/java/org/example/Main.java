@@ -1,19 +1,53 @@
 package org.example;
+import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int largo =largolista();
+        int[] arreglo = crearlista(largo);
+        int mayorProducto = productoAdyacentes(arreglo);
+        System.out.println("El mayor producto:" + mayorProducto);
+    }
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+    public static int largolista() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese la cantidad de numeros de su lista");
+        int largo = scanner.nextInt();
+        return largo;
+    }
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+    public static int[] crearlista(int largo) {
+        Scanner scanner = new Scanner(System.in);
+        int[] arreglo = new int[largo];
+        for (int i = 0; i < largo; i++) {
+            arreglo[i] = scanner.nextInt();
         }
+        return arreglo;
+    }
+
+    public static int productoAdyacentes(int[] arreglo) {
+        if (arreglo == null || arreglo.length < 2) {
+            throw new IllegalArgumentException("El arreglo debe tener al menos dos elementos y no puede ser cero");
+        }
+        if (arreglo.length > 20){
+            throw new IllegalArgumentException("El largo de la lista no puede exceder las 20 variables, ingrese nuevamente un numero");
+        }
+
+        if (arreglo.length <0){
+            System.out.println("Error: La longitud de la lista no puede ser un número negativo.");
+        }
+        for (int largo : arreglo) {
+            if (largo > 1000 || largo < -1000) {
+                throw new IllegalArgumentException("Los números no deben ser mayores que 1000 o menores que -1000");
+            }
+        }
+        int mayorProducto = Integer.MIN_VALUE;
+        for (int i = 0; i < arreglo.length - 1; i++) {
+            int productoActual = arreglo[i] * arreglo[i + 1];
+            if (productoActual > mayorProducto) {
+                mayorProducto = productoActual;
+            }
+        }
+        return mayorProducto;
     }
 }
